@@ -1,0 +1,34 @@
+nav{
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+/* Llamamos mediante etiqueta */
+h1{
+    color: rgb(47, 47, 187);
+}
+
+/* Llamamos mediante clase */
+.segundo-encabezado{
+    color: red;
+}
+
+/* Llamamos por id */
+#nuestro-h3{
+    color: teal;
+}
+
+.article-h3{
+    font-size: 50px;
+}
+
+.aside-p{
+    background-image: url(../assets/messi.jpg);
+}
+A

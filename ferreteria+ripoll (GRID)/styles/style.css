@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;500&family=Oswald&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+.logo{
+    /* font-family: 'Barlow', sans-serif; */
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    width: 25%;
+}
+
+
+nav{
+    display: flex;
+    justify-content:space-around;    
+}
+
+nav a{
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 10%;
+    background-color: rgb(152, 206, 84);
+    border: 4px rgb(152, 206, 84) solid;
+    
+}
+
+
+h1{
+    color: rgb(58, 58, 58);
+}
+
+
+
+
+
+.informacion{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    margin-top: 2%;
+    background-color: rgb(152,206,84);    
+}
+.infoRegistro{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    margin-top: 35px;
+    background-color:rgb(152,206,84);
+}
+.infoContacto{
+    display: flex;
+    justify-content: center;    margin-top: 2%;
+    margin-top: 35px;
+    background-color: rgb(152,206,84);
+}
+
+.parrafo{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-family: 'Oswald', sans-serif;
+    font-size: x-large;
+    
+}
+/* Establecemos el grid y sus elementos */
+.imgContainer{
+    width: 100%;
+    margin-top: 20px;
+    /* border: 1px solid black; */
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns:auto;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(1, 80%);
+    grid-template-areas: 
+    "imgCatalogo1 imgCatalogo2 imgCatalogo3 imgCatalogo4 imgCatalogo5"
+    "videoCatalogo videoCatalogo videoCatalogo videoCatalogo videoCatalogo"
+    ;
+}
+.imgCatalogo1{
+    grid-area: imgCatalogo1;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+.imgCatalogo2{
+    grid-area: imgCatalogo2;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+.imgCatalogo3{
+    grid-area: imgCatalogo3;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+.imgCatalogo4{
+    grid-area: imgCatalogo4;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+.imgCatalogo5{
+    grid-area: imgCatalogo5;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.grid-container{
+    width: 100%;
+    margin-top: 20px;
+    /* border: 1px solid black; */
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(1, 400px);
+    grid-template-areas: 
+    "img-1 img-2 img-3 img-4"
+    ;
+}
+.img-1{
+    grid-area: img-1;
+    width: 100%;
+    height: 100%;
+}
+.img-2{
+    grid-area: img-2;
+    width: 100%;
+    height: 100%;
+}
+.img-3{
+    grid-area: img-3;
+    width: 100%;
+    height: 100%;
+}
+.img-4{
+    grid-area: img-4;
+    width: 100%;
+    height: 100%;
+}
+.formularioContacto{
+    margin-bottom: 12px;
+}
+
+.inputContacto{
+    margin-top: 12px;
+}
+.formulario{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    margin-top: 40%;
+    background-color: rgb(88, 141, 88);
+}
+
+@media screen and (max-width:760px){
+        .grid-container{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: repeat(2, 400px);
+            grid-template-areas: 
+            "img-1 img-2"
+            "img-3 img-4"
+            ;
+        }
+    .img-1{
+        grid-area: img-1;
+        width: 300px;
+        height: 300px;
+    }
+    .img-2{
+        grid-area: img-2;
+        width: 300px;
+        height: 300px;
+    }
+    .img-3{
+        grid-area: img-3;
+        width: 300px;
+        height: 300px;
+    }
+    .img-4{
+        grid-area: img-4;
+        width: 300px;
+        height: 300px;
+    }
+
+    .imgContainer{
+        width: 100%;
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: repeat(2, 50%);
+        grid-template-areas: 
+        "imgCatalogo1 imgCatalogo2 imgCatalogo3" 
+        "imgCatalogo4 imgCatalogo5 imgCatalogo6"
+        ;
+    }
+    .imgCatalogo1{
+        grid-area: imgCatalogo1;
+        margin-top: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    .imgCatalogo2{
+        grid-area: imgCatalogo2;
+        margin-top: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    .imgCatalogo3{
+        grid-area: imgCatalogo3;
+        margin-top: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    .imgCatalogo4{
+        grid-area: imgCatalogo4;
+        margin-top: 10px;
+        width: 200´x;
+        height: 100%;
+    }
+    .imgCatalogo5{
+        grid-area: imgCatalogo5;
+        margin-top: 10px;
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width:330px){
+    .grid-container{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, 60%);
+        grid-template-rows: repeat(4, 400px);
+        grid-template-areas: 
+        "img-1" 
+        "img-2"
+        "img-3" 
+        "img-4"
+        ;
+    }
+.img-1{
+    grid-area: img-1;
+    width: 200px;
+    height: 200px;
+}
+.img-2{
+    grid-area: img-2;
+    width: 200px;
+    height: 200px;
+}
+.img-3{
+    grid-area: img-3;
+    width: 200px;
+    height: 200px;
+}
+.img-4{
+    grid-area: img-4;
+    width: 200px;
+    height: 200px;
+}
+
+.imgContainer{
+    width: 100%;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(5, 20%);
+    grid-template-areas: 
+    "imgCatalogo1" 
+    "imgCatalogo2" 
+    "imgCatalogo3" 
+    "imgCatalogo4"
+    "imgCatalogo5"
+    "imgCatalogo6"
+    ;
+}
+.imgCatalogo1{
+    grid-area: imgCatalogo1;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+.imgCatalogo2{
+    grid-area: imgCatalogo2;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+.imgCatalogo3{
+    grid-area: imgCatalogo3;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+.imgCatalogo4{
+    grid-area: imgCatalogo4;
+    margin-top: 10px;
+    width: 200´x;
+    height: 100%;
+}
+.imgCatalogo5{
+    grid-area: imgCatalogo5;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+}

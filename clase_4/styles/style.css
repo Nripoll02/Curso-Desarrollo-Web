@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    
+}
+
+
+.headerNav{
+    text-align: center;
+}
+
+
+nav a{
+    background-color: aquamarine;
+    color: blueviolet;
+    text-decoration: none;
+    font-size: xx-large;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 10px 15px 20px 25px;
+}
+.section{
+    margin-top: 150px;
+}
+
+.caja-contenedora{
+    margin-top: 20px;
+    border: 5px dashed #ffbf75;
+}
+.caja-hija{
+    width: 100%;
+    height: 150px;
+    /* font-family: 'Barlow', sans-serif; */
+
+    
+    
+}
+.caja-contenedora .caja-hija .parrafo{
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+}
