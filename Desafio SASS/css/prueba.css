@@ -1,0 +1,38 @@
+header {
+  background-color: #ff9797; }
+  header nav {
+    text-align: center; }
+    header nav a {
+      font-size: x-large;
+      text-decoration: none;
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
+      header nav a:hover {
+        color: aqua; }
+
+section {
+  background-color: #adffad; }
+  section p {
+    font-family: Verdana;
+    font-size: large; }
+    section p:hover {
+      color: blue; }
+
+img {
+  height: 500px;
+  width: 500px;
+  box-shadow: 0 0 7px #000;
+  border-radius: 50%;
+  width: 50%;
+  transition: 300ms; }
+  img:hover {
+    transform: scale(1.15); }
+
+footer {
+  background-color: pink;
+  margin-bottom: 0%; }
+  footer a {
+    text-decoration: none;
+    color: red;
+    text-align: center; }
+    footer a:hover {
+      font-size: xx-large; }

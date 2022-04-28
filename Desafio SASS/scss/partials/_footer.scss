@@ -1,0 +1,12 @@
+footer{
+    background-color: pink;
+    margin-bottom:0% ;
+    a{
+        text-decoration: none;
+        color: red;
+        text-align: center;
+        &:hover{
+            font-size: xx-large;
+        }
+    }
+}
