@@ -1,0 +1,51 @@
+:root{
+    background-color: greenyellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+/* Pseudoclases hover y focus */
+
+.a-01:hover{
+    color: aqua;
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 300ms;
+}
+.a-02:focus{
+    font-size: 100px;
+}
+
+/* ================================================== */
+
+
+/* pseudoclase first-child */
+/* Selecciona el primer elemento entre hermanos */
+p:first-child{
+    color: red;
+}
+
+
+/* ================================================== */
+
+p:last-child{
+    color: rebeccapurple;
+    background-color: aqua;
+    padding: 30px;
+}
+
+/* =================================================== */
+/* Last of type */
+/* Representa el ultimo de su tipo */
+p:last-of-type{
+    color: green;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* ==================================================== */
+
+/* Active */
+/* Mantiene el color solo cuando hacemos click */
+a:active{
+    color:blueviolet;
+}
